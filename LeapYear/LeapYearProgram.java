@@ -1,3 +1,6 @@
+package LeapYear
+
+import java.util.*;
 import java.util.Calendar;
 
 /**
@@ -6,8 +9,7 @@ import java.util.Calendar;
  * A leap year is a year which contains 366 day, which is 1 day more of normal 365 day year.
  * Leap year comes in a interval of 4 years. In Gregorian
  * calendar in leap year February has 29 days which is 1 day more than 28 day in normal year.
- *
- * @author
+
  */
 public class LeapYearProgram {
  
@@ -15,17 +17,17 @@ public class LeapYearProgram {
     public static void main(String args[]) {
  
         //Testing some leap and non leap year using Java library code
-        System.err.println("Is 2000 a leap year ? : " + isLeapYear(2000));
-        System.err.println("Is 2012 a leap year ? : " + isLeapYear(2012));
-        System.err.println("Is 1901 a leap year ? : " + isLeapYear(1901));
-        System.err.println("Is 1900 a leap year ? : " + isLeapYear(1900));
+        System.out.println("Is 2000 a leap year ? : " + isLeapYear(2000));
+        System.out.println("Is 2012 a leap year ? : " + isLeapYear(2012));
+        System.out.println("Is 1901 a leap year ? : " + isLeapYear(1901));
+        System.out.println("Is 1900 a leap year ? : " + isLeapYear(1900));
      
      
         //Checking leap year without using library or API and applying logic
-        System.err.println("Does 2000 a leap year : " + doesLeapYear(2000));
-        System.err.println("Does 2012 a leap year : " + doesLeapYear(2012));
-        System.err.println("Does 1901 a leap year : " + doesLeapYear(1901));
-        System.err.println("Does 1900 a leap year : " + doesLeapYear(1900));
+        System.out.println("Does 2000 a leap year : " + doesLeapYear(2000));
+        System.out.println("Does 2012 a leap year : " + doesLeapYear(2012));
+        System.out.println("Does 1901 a leap year : " + doesLeapYear(1901));
+        System.out.println("Does 1900 a leap year : " + doesLeapYear(1900));
     }  
  
  
@@ -38,9 +40,9 @@ public class LeapYearProgram {
    public static boolean isLeapYear(int year){
        Calendar cal = Calendar.getInstance(); //gets Calendar based on local timezone and locale
        cal.set(Calendar.YEAR, year); //setting the calendar year
-       int noOfDays = cal.getActualMaximum(Calendar.DAY_OF_YEAR);
+       int noOfDay = cal.getActualMaximum(Calendar.DAY_OF_YEAR);
      
-       if(noOfDays > 365){
+       if(noOfDay > 365){
            return true;
        }
      
