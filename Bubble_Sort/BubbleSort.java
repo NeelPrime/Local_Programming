@@ -1,14 +1,16 @@
-package Bubble_Sort;
-
 import java.util.Arrays;
  
-
+/**
+* Java program to implement bubble sort algorithm and sort integer array using
+* that method.
+*
+* @author Javin Paul
+*/
 public class BubbleSort{
  
    public static void main(String args[]) {
-    
-    
         bubbleSort(new int[] { 20, 12, 45, 19, 91, 55 });
+        bubbleSort(new int[] { -1, 0, 1 });
         bubbleSort(new int[] { -3, -9, -2, -1 });
 
     }
