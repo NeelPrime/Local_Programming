@@ -31,9 +31,7 @@ public class BubbleSort{
                 Arrays.toString(numbers));
     }
     
-    /*
-     * Utility method to swap two numbers in array
-     */
+    
     public static void swap(int[] array, int from, int to){
         int temp = array[from];
         array[from] = array[to];
