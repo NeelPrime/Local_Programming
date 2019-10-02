@@ -1,3 +1,6 @@
+package Local_Programming;
+
+import java.util.Scanner;
 /**
  * Simple Java program to find the factorial of a number using recursion and iteration.
  * Iteration will use for loop while recursion will call method itself
@@ -6,11 +9,16 @@ public class FactorialInJava{
 
     public static void main(String args[]) {
      
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Enter Number to find factorial using recursion");
+        int num1=scan.nextInt();
+        System.out.println("Enter Number to find factorial using iteration");
+        int num2=scan.nextInt();
       //finding factorial of a number in Java using recursion - Example
-      System.out.println("factorial of 5 using recursion in Java is: " + factorial(5));
+      System.out.println("factorial of 5 using recursion in Java is: " + factorial(num1));
      
       //finding factorial of a number in Java using Iteration - Example
-       System.out.println("factorial of 6 using iteration in Java is: " + fact(6));
+       System.out.println("factorial of 6 using iteration in Java is: " + fact(num2));
     }
  
  
